@@ -1,0 +1,41 @@
+.why-we{
+	height: 964px;
+	
+	.center{
+		margin: 145px 0 82px 0;
+
+		.row{
+			margin: 0 0 80px 0;
+		}
+	}
+
+	.first{
+		margin: 0 0 88px 0;
+	}
+
+	.center p{
+		font-style: italic;
+	}
+
+	.col-lg-4{
+		h4{
+			font: 15px $gotham_font_b;
+			text-transform: uppercase;
+		}
+
+		.small-line{
+			width: 20px;
+			height: 1px;
+			border-bottom: 2px solid $pink;
+			display: inline-block;
+		}
+
+		p{
+			font-size: 14px;
+			font-style: italic;
+			max-width: 283px;
+			line-height: 25px;
+			margin: 10px 0 0 0;
+		}
+	}
+}

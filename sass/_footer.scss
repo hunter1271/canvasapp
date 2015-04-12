@@ -1,0 +1,76 @@
+.footer{
+	color:$white;
+
+	.first{
+		margin: 70px 0 10px 0;
+	}
+	.brand{
+		.shape-footer{
+			float: left;
+		}
+		p{
+			font: 34px $gotham_font;
+			  line-height: 13px;
+			   margin: 10px 0 0 0;
+		}
+		.credo{
+			font:10px $gotham_font;
+		}
+	}
+
+	.footer-nav{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		font: 12px $gotham_font_b;
+		text-transform: uppercase;
+		li{
+			margin: 15px 0;
+			cursor: pointer;
+		}
+	}
+	
+	.subcribe{
+		font-style: italic;
+		font-size: 13px;
+		color:#d8d8d9;
+		p{
+			
+		}
+		input{
+			background: #4b4c52;
+			  padding: 10px 0 10px 15px;
+			  border: none;
+			  width: 285px;
+			  margin: 0 4px 0 0;
+			  @include border-radius(3px);
+		}
+		button{
+			font: 12px $gotham_font_b;
+			color:$black;
+			text-transform: uppercase;
+			width: 140px;
+		}
+	}
+
+}
+
+.copy{
+	padding: 87px 0 34px 0;
+}
+
+.copyright{
+	font-style: italic;
+	font-size: 13px;
+	color:#d8d8d9;
+	margin: 10px 0 0 0;
+	a{
+		color:#d8d8d9;
+		text-decoration: underline;
+	}
+}
+.grey_line{
+	border-bottom:1px solid #313238;
+	height: 1px;
+	width: 100%;
+}

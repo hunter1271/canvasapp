@@ -1,0 +1,58 @@
+.for-slider{
+	text-align: center;
+	color:$white;
+	
+
+	.col-lg-12{
+		margin: 160px 0 0 0;
+	}
+	img{
+		width: 162px;
+		margin: 0 auto;
+	}
+	h3{
+		font: 22px $gotham_font;
+		text-transform: uppercase;
+	}
+	p,span{
+		font-style: italic; 		
+	}	
+	span{
+		font-size: 12px;
+	}
+	p{
+		font-size: 16px;
+	}
+	button{
+		margin: 190px 0 0 0;
+	}
+
+	.bx-wrapper .bx-prev,
+	.bx-wrapper .bx-next{
+		background: none;
+	}
+}
+	.slider_bottom_p{
+		font-style: italic; 
+		font-size: 14px;
+		color:$white;
+		  position: absolute;
+		  bottom: 80px;
+		  left: 0;
+		  right: 0;
+		  text-align: center;
+		  .line{
+		  	    border-bottom: 1px solid #fff;
+				  height: 1px;
+				  width: 100%;
+				  display: inline-block;
+				  float: left;
+				    opacity: 0.2;
+				      margin: -8px 0px 0px 0;
+		  }
+		  .slider_bottom_text{
+		  	  margin: 0px 0 0 0;
+			  overflow: hidden;
+			  padding: 0 4px;
+		  }
+	}

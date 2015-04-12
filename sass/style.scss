@@ -1,0 +1,34 @@
+@import "compass/css3"; 
+@import "compass/utilities/sprites";
+
+@import "common";
+@import "small-icons";
+@import "bxslider";
+@import "intrance";
+@import "nav";
+@import "circles";
+@import "why-we";
+@import "slider";
+@import "gallery";
+@import "footer";
+
+
+.bg1{
+	background: url(../images/bg1.png) no-repeat;
+	height: 825px;
+}
+
+.bg-pink{
+	background: url(../images/bg-pink.png) no-repeat;
+	height: 793px;
+}
+
+.bg-pink2{
+	background: url(../images/bg-pink2.png) no-repeat;
+	height: 797px;
+	position: relative;
+}
+
+.bg_footer{
+	background: #37383e;
+}

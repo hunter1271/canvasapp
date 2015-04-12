@@ -1,0 +1,45 @@
+.navbar{
+	margin: 0;
+	line-height: 50px;
+	li a{
+		font: 12px $gotham_font;
+		color:$black;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 21px 10px;
+	}
+	.navbar-brand{
+		font: 26px $gotham_font;
+		color:$black;
+		text-transform: none;
+		font-weight: 600;
+		  margin: 0 20px 0 0;
+		  padding: 0;
+	}
+	.shape-nav{
+		  float: left;
+		  margin: 10px 0 0 0;
+	}
+	.capp{
+		  margin: 10px 0 0 10px;
+		  display: inline-block;
+	}
+
+	.nav>li>a:hover, 
+	.nav>li>a:focus{
+		background: none;
+		color:$pink;
+	}
+
+	.navbar-right{
+		li{
+			margin-right: 30px;
+			cursor: pointer;
+		}
+	}
+
+	.try_free{
+		width: 220px;
+		font-size: 12px;
+	}
+}

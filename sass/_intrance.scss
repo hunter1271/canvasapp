@@ -1,0 +1,40 @@
+.intrance{
+
+	.intrance_block{
+		margin: 220px 0 0 0;
+	}
+
+	.intrance_text{
+		font-size: 16px;
+		font-style: italic;
+		margin: 0 0 30px 0;
+	}
+
+	.scroll{
+		  margin: 140px 0 0 0;
+		.scroller:hover{
+			-webkit-transform: translateY(5px);
+			-ms-transform: translateY(5px);
+			-o-transform: translateY(5px);
+			transform: translateY(5px);
+		}
+		.scroller{
+			cursor: pointer;
+			transition: transform .5s;
+		}
+
+		p{
+		  font-size: 13px;
+		  font-style: italic;
+		}
+	}
+
+
+
+
+
+
+
+
+
+}
