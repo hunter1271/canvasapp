@@ -316,13 +316,16 @@ $(document).ready(function(){
   $container.isotope({
       itemSelector: '.gal-pic',
       masonry: {
-        gutter:4
+          columnWidth: 280,
+          gutter:4
       },
       filter: "*",
     });
 
     $(".gallery-nav").on("click", "li", function(){
-      var sortByValue = $(this).attr('data-sort-by');
+        $(".gallery-nav li").removeClass("active");
+        $(this).addClass("active");
+        var sortByValue = $(this).attr('data-sort-by');
       $container.isotope({ filter: sortByValue });
       return false;
     })
