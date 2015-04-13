@@ -28,8 +28,12 @@
 		}
 		.search{
 			float: right;
+            .icon-search-ic{
+              color:$black;
+            }
 			.btn{
 				background: none;
+                padding: 0;
 			}
 		}
 

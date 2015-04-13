@@ -35,6 +35,13 @@
 		li{
 			margin-right: 30px;
 			cursor: pointer;
+            .ic{
+              font-size: 16px;
+              color:$black;
+            }
+            .ic:hover{
+              color:$pink;
+            }
 		}
 	}
 

@@ -1,9 +1,7 @@
-$small_icons_arr:circle1,circle2,circle3,circul,chevron-left,chevron-right,good,hunter,lampa,lineika,portmone,quality,rectangle,scroller,shape-nav,shape-footer,shape-header,vkontakte,wysywig;
+$small_icons_arr:circle1,circle2,circle3,circul,hunter,lineika;
 
 @each $small_icon in $small_icons_arr{
 	.#{$small_icon}{
-		width: 50px;
-		height: 50px;
 		display: inline-block;
 		background-image: sprite-url($icons);
 		background-position: sprite-position($icons,#{$small_icon});		
@@ -16,63 +14,14 @@ $small_icons_arr:circle1,circle2,circle3,circul,chevron-left,chevron-right,good,
 }
 
 .circul{
-	width: 14px;
-	height: 27px;
-}
-.chevron-left,
-.chevron-right{
-	width: 38px;
-	height: 38px;
-}
-.good{
-	width: 20px;
-	height: 22px;
+  width: 14px;
+  height: 27px;
 }
 .hunter{
-	width: 22px;
-	height: 20px;
-}
-.lampa{
-	width: 22px;
-	height: 20px;
+  width: 22px;
+  height: 20px;
 }
 .lineika{
-	width: 21px;
-	height: 22px;
-}
-.portmone{
-	width: 23px;
-	height: 19px;
-}
-.quality{
-	width: 21px;
-	height: 21px;
-}
-.rectangle{
-	width: 23px;
-	height: 21px;
-}
-.scroller{
-	width: 24px;
-	height: 37px;
-}
-.shape-nav{
-	width: 43px;
-	height: 27px;
-}
-.shape-footer{
-	width: 68px;
-	height: 42px;
-}
-.shape-header{
-	width: 78px;
-	height: 49px;
-}
-.vkontakte{
-	width: 17px;
-	height: 17px;
-}
-.wysywig{
-	width: 20px;
-	height: 20px;
+  width: 21px;
+  height: 22px;
 }

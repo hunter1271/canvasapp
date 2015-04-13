@@ -1,9 +1,9 @@
-@include font-face("FontAwesome", font-files(
-    "font-awesome/fontawesome-webfont.woff", 
-    "font-awesome/fontawesome-webfont.ttf",   
-    "font-awesome/fontawesome-webfont.svg"
-  ), 
-  "font-awesome/fontawesome-webfont.eot" 
+@include font-face("FontIcomoon", font-files(
+    "font-icomoon/icomoon.woff",
+    "font-icomoon/icomoon.ttf",
+    "font-icomoon/icomoon.svg"
+),
+  "font-icomoon/icomoon.eot"
 );
 
 @include font-face("Gotham", font-files(
@@ -21,7 +21,7 @@
 );
 
 $icons: sprite-map("small-icons/*.png",$spacing: 5px, $layout: vertical);
-$pink:#df496c;
+$pink:#cd3c5e;
 $black:#61626b;
 $white:#fff;
 $gotham_font:Gotham,  "Helvetica", "Arial", sans-serif;
@@ -57,52 +57,28 @@ h2{
   font-weight: 300;
 }
 
-.pink{
+.btn-pink{
   background: $pink;
   color:$white;
   width: 260px;
 }
 
-.pink:hover,
-.pink:active,
-.pink:focus{
+.btn-pink:hover,
+.btn-pink:active,
+.btn-pink:focus{
     color:$white;
 }
 
-.white{
+.btn-white{
   background: $white;
   color:$black;
   width: 220px;
 }
 
-.white:hover,
-.white:active,
-.white:focus{
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus{
     color:$black;
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-  font-size: 18px;
-}
-
-.fa-facebook-square:before {
-  content: "\f082";
-}
-
-.fa-instagram:before {
-  content: "\f16d";
-}
-.fa-chevron-circle-left:before {
-  content: "\f137";
-}
-.fa-chevron-circle-right:before {
-  content: "\f138";
 }
 
 .or-choose{
@@ -124,7 +100,7 @@ h2{
   background: url(../images/grey-line1.png) repeat-x;
 }
 
-.pink-line{
+.btn-pink-line{
   height: 3px;
   background: url(../images/pink-line.png) repeat-x;
 }

@@ -90,10 +90,10 @@ ul.bxslider {
   line-height: 0;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .chevron-left {
+.bx-wrapper .icon-left-ic {
   left: 10px;
 }
-.bx-wrapper .chevron-right {
+.bx-wrapper .icon-right-ic {
   right: 10px;
 }
 .bx-wrapper .bx-controls-direction a {
@@ -103,12 +103,15 @@ ul.bxslider {
   outline: 0;
   z-index: 9999;
   color:$white;
-  font-size: 30px;
   opacity: .5;
-}
-.bx-wrapper .bx-controls-direction a {
   text-decoration: none;
+  font-size: 40px;
+  width: 42px;
 }
+.bx-wrapper .bx-controls-direction a:hover{
+  opacity: 1;
+}
+
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }
