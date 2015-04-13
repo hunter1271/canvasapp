@@ -20,7 +20,7 @@
 		ul li.active{
 			background: $black;
 			color:$white;
-			@include border-radius(5px);
+			@include border-radius(3px);
 		}	
 
 		.gallery-nav{

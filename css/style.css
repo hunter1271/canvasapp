@@ -722,9 +722,9 @@ ul.bxslider {
 .gallery .gallery-block ul li.active {
   background: #61626b;
   color: #fff;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .gallery .gallery-block .gallery-nav {
   float: left;
@@ -774,8 +774,10 @@ ul.bxslider {
 .footer .first {
   margin: 70px 0 10px 0;
 }
-.footer .brand .shape-footer {
+.footer .brand .icon-logo {
+  font-size: 45px;
   float: left;
+  margin: 0 7px 0 0;
 }
 .footer .brand p {
   font: 34px Gotham, "Helvetica", "Arial", sans-serif;
