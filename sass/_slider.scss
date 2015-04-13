@@ -41,18 +41,28 @@
 		  left: 0;
 		  right: 0;
 		  text-align: center;
-		  .line{
-		  	    border-bottom: 1px solid #fff;
-				  height: 1px;
-				  width: 100%;
-				  display: inline-block;
-				  float: left;
-				    opacity: 0.2;
-				      margin: -8px 0px 0px 0;
-		  }
+
 		  .slider_bottom_text{
 		  	  margin: 0px 0 0 0;
 			  overflow: hidden;
 			  padding: 0 4px;
-		  }
+
+              &:before,
+              &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                border-top: 1px solid $white;
+                margin-top: .6em;
+                opacity: 0.2;
+              }
+
+                &:before {
+                  margin-left: -101%;
+                }
+                &:after {
+                  margin-left: 1%;
+                }
+          }
+
 	}
