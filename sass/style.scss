@@ -12,10 +12,6 @@
 @import "gallery";
 @import "footer";
 
-.bg1,.bg-pink,.bg-pink2{
-  width: 1438px;
-  margin: 0 auto;
-}
 .bg1{
 	background: url(../images/bg1.png) no-repeat;
 	height: 825px;
@@ -34,4 +30,8 @@
 
 .bg_footer{
 	background: #37383e;
+}
+
+.bg1,.bg-pink,.bg-pink2{
+  background-size: cover;
 }

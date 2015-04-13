@@ -573,6 +573,70 @@ ul.bxslider {
   font-size: 13px;
   font-style: italic;
 }
+@-webkit-keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+  }
+  to {
+    margin-top: 50%;
+  }
+}
+@keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+  }
+  to {
+    margin-top: 50%;
+  }
+}
+@-webkit-keyframes scroll-mouse {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 15px;
+  }
+}
+@keyframes scroll-mouse {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 15px;
+  }
+}
+.intrance .scroll div.mouse-container {
+  position: relative;
+  display: block;
+  height: 100px;
+}
+.intrance .scroll div.mouse {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 50px;
+  height: 80px;
+  border: solid 2px #61626b;
+  border-radius: 25px;
+  -webkit-animation: scroll-mouse 1.5s;
+  animation: scroll-mouse 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.intrance .scroll div.mouse span.scroll-down {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #61626b;
+  border-radius: 50%;
+  margin: 15% auto auto auto;
+  -webkit-animation: scroll-inner 1.5s;
+  animation: scroll-inner 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
 
 .navbar {
   margin: 0;
@@ -870,11 +934,6 @@ ul.bxslider {
   width: 100%;
 }
 
-.bg1, .bg-pink, .bg-pink2 {
-  width: 1438px;
-  margin: 0 auto;
-}
-
 .bg1 {
   background: url(../images/bg1.png) no-repeat;
   height: 825px;
@@ -893,6 +952,10 @@ ul.bxslider {
 
 .bg_footer {
   background: #37383e;
+}
+
+.bg1, .bg-pink, .bg-pink2 {
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
