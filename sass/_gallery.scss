@@ -28,9 +28,28 @@
 		}
 		.search{
 			float: right;
+            margin: 0 20px 0 0;
+            border: 1px solid #e8e8e8;
+            padding: 7px 10px;
+
             .icon-search-ic{
               color:$black;
             }
+
+            .animated-input{
+              width: 0;
+              border: none;
+              font-style: italic;
+            }
+
+            .glyphicon-remove-circle{
+              display: none;
+              cursor: pointer;
+              &:hover{
+                color:$pink;
+              }
+            }
+
 			.btn{
 				background: none;
                 padding: 0;

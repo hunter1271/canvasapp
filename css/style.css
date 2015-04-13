@@ -4,6 +4,11 @@
   src: url('../fonts/font-icomoon/icomoon.eot?&1428414278#iefix') format('embedded-opentype'), url('../fonts/font-icomoon/icomoon.woff?1428414278') format('woff'), url('../fonts/font-icomoon/icomoon.ttf?1428414278') format('truetype'), url('../fonts/font-icomoon/icomoon.svg?1428414278') format('svg');
 }
 @font-face {
+  font-family: "Glyphicons Halflings";
+  src: url('../fonts/glyphicons-halflings-regular.eot?1428909569');
+  src: url('../fonts/glyphicons-halflings-regular.eot?&1428909569#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff?1428909569') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf?1428909569') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg?1428909569') format('svg');
+}
+@font-face {
   font-family: "Gotham";
   src: url('../fonts/GothamProRegular/GothamProRegular.eot?1428909569');
   src: url('../fonts/GothamProRegular/GothamProRegular.eot?&1428909569#iefix') format('embedded-opentype'), url('../fonts/GothamProRegular/GothamProRegular.woff?1428909569') format('woff'), url('../fonts/GothamProRegular/GothamProRegular.ttf?1428909569') format('truetype');
@@ -91,6 +96,28 @@ h2 {
 .btn-pink-line {
   height: 3px;
   background: url(../images/pink-line.png) repeat-x;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+*:focus,
+button {
+  outline: none;
+  box-shadow: none;
 }
 
 .circle1 {
@@ -731,9 +758,24 @@ ul.bxslider {
 }
 .gallery .gallery-block .search {
   float: right;
+  margin: 0 20px 0 0;
+  border: 1px solid #e8e8e8;
+  padding: 7px 10px;
 }
 .gallery .gallery-block .search .icon-search-ic {
   color: #61626b;
+}
+.gallery .gallery-block .search .animated-input {
+  width: 0;
+  border: none;
+  font-style: italic;
+}
+.gallery .gallery-block .search .glyphicon-remove-circle {
+  display: none;
+  cursor: pointer;
+}
+.gallery .gallery-block .search .glyphicon-remove-circle:hover {
+  color: #cd3c5e;
 }
 .gallery .gallery-block .search .btn {
   background: none;

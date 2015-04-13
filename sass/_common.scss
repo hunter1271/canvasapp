@@ -6,6 +6,15 @@
   "font-icomoon/icomoon.eot"
 );
 
+@include font-face("Glyphicons Halflings", font-files(
+    "glyphicons-halflings-regular.woff",
+    "glyphicons-halflings-regular.ttf",
+    "glyphicons-halflings-regular.svg"
+),
+  "glyphicons-halflings-regular.eot"
+);
+
+
 @include font-face("Gotham", font-files(
     "GothamProRegular/GothamProRegular.woff", 
     "GothamProRegular/GothamProRegular.ttf"
@@ -103,4 +112,26 @@ h2{
 .btn-pink-line{
   height: 3px;
   background: url(../images/pink-line.png) repeat-x;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+*:focus,
+button{
+  outline:none;
+  box-shadow:none;
 }

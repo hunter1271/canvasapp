@@ -254,7 +254,9 @@
                   </ul>                  
                   <div class="search">
                       <span class="ic icon-search-ic"></span>
-                      <button class="btn">Поиск</button>
+                      <input type="text"  class="animated-input" placeholder="Начните вводить"/>
+                      <span class="glyphicon glyphicon-remove-circle"></span>
+                      <button class="btn search-btn">Поиск</button>
                   </div>  
                 <div class="gallery-pictures">
                       <div class="gal-pic nature"><img src="images/gallery/foto1.png" alt=""></div>
@@ -365,7 +367,17 @@ $(document).ready(function(){
         }, 500);
         event.preventDefault();
     });
-    
+
+    $(".search-btn").on("click", function (){
+        $(".animated-input").animate({"width": "196px"}, 400);
+        $(".glyphicon-remove-circle").css("display","inline");
+    });
+
+    $(".glyphicon-remove-circle").on("click",function (){
+        $(".animated-input").animate({"width": "0"}, 400);
+        $(".glyphicon-remove-circle").css("display","none");
+    });
+
 });
 
 </script>
