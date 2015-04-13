@@ -5,8 +5,11 @@
 		margin: 70px 0 10px 0;
 	}
 	.brand{
-		.shape-footer{
-			float: left;
+
+		.icon-logo{
+            font-size: 45px;
+            float: left;
+            margin: 0 7px 0 0;
 		}
 		p{
 			font: 34px $gotham_font;
@@ -28,6 +31,9 @@
 			margin: 15px 0;
 			cursor: pointer;
 		}
+        li:hover{
+          color:$pink;
+        }
 	}
 	
 	.subcribe{

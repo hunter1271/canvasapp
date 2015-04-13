@@ -690,11 +690,6 @@ ul.bxslider {
   right: 0;
   text-align: center;
 }
-.slider_bottom_p .slider_bottom_text {
-  margin: 0px 0 0 0;
-  overflow: hidden;
-  padding: 0 4px;
-}
 .slider_bottom_p .slider_bottom_text:before, .slider_bottom_p .slider_bottom_text:after {
   content: '';
   position: absolute;
@@ -800,6 +795,9 @@ ul.bxslider {
 .footer .footer-nav li {
   margin: 15px 0;
   cursor: pointer;
+}
+.footer .footer-nav li:hover {
+  color: #cd3c5e;
 }
 .footer .subcribe {
   font-style: italic;
