@@ -1,17 +1,17 @@
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/font-awesome/fontawesome-webfont.eot?1418029484');
-  src: url('../fonts/font-awesome/fontawesome-webfont.eot?&1418029484#iefix') format('embedded-opentype'), url('../fonts/font-awesome/fontawesome-webfont.woff?1418029484') format('woff'), url('../fonts/font-awesome/fontawesome-webfont.ttf?1418029484') format('truetype'), url('../fonts/font-awesome/fontawesome-webfont.svg?1418029484') format('svg');
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?1428909569');
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?&1428909569#iefix') format('embedded-opentype'), url('../fonts/font-awesome/fontawesome-webfont.woff?1428909569') format('woff'), url('../fonts/font-awesome/fontawesome-webfont.ttf?1428909569') format('truetype'), url('../fonts/font-awesome/fontawesome-webfont.svg?1428909569') format('svg');
 }
 @font-face {
   font-family: "Gotham";
-  src: url('../fonts/GothamProRegular/GothamProRegular.eot?1414710194');
-  src: url('../fonts/GothamProRegular/GothamProRegular.eot?&1414710194#iefix') format('embedded-opentype'), url('../fonts/GothamProRegular/GothamProRegular.woff?1414710086') format('woff'), url('../fonts/GothamProRegular/GothamProRegular.ttf?1414709978') format('truetype');
+  src: url('../fonts/GothamProRegular/GothamProRegular.eot?1428909569');
+  src: url('../fonts/GothamProRegular/GothamProRegular.eot?&1428909569#iefix') format('embedded-opentype'), url('../fonts/GothamProRegular/GothamProRegular.woff?1428909569') format('woff'), url('../fonts/GothamProRegular/GothamProRegular.ttf?1428909569') format('truetype');
 }
 @font-face {
   font-family: "GothamBold";
-  src: url('../fonts/GothamProBold/GothamProBold.eot?1414710126');
-  src: url('../fonts/GothamProBold/GothamProBold.eot?&1414710126#iefix') format('embedded-opentype'), url('../fonts/GothamProBold/GothamProBold.woff?1414710012') format('woff'), url('../fonts/GothamProBold/GothamProBold.ttf?1414709900') format('truetype');
+  src: url('../fonts/GothamProBold/GothamProBold.eot?1428909569');
+  src: url('../fonts/GothamProBold/GothamProBold.eot?&1428909569#iefix') format('embedded-opentype'), url('../fonts/GothamProBold/GothamProBold.woff?1428909569') format('woff'), url('../fonts/GothamProBold/GothamProBold.ttf?1428909569') format('truetype');
 }
 body {
   color: #61626b;
@@ -868,6 +868,11 @@ ul.bxslider {
   border-bottom: 1px solid #313238;
   height: 1px;
   width: 100%;
+}
+
+.bg1, .bg-pink, .bg-pink2 {
+  width: 1438px;
+  margin: 0 auto;
 }
 
 .bg1 {
