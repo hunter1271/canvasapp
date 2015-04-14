@@ -469,20 +469,25 @@ ul.bxslider {
   font-style: italic;
   margin: 0 0 30px 0;
 }
-.intrance .scroll {
-  margin: 125px 0 0 0;
+
+.scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 30px;
+  bottom: 40px;
 }
-.intrance .scroll .scroller:hover {
+.scroll .scroller:hover {
   -webkit-transform: translateY(5px);
   -ms-transform: translateY(5px);
   -o-transform: translateY(5px);
   transform: translateY(5px);
 }
-.intrance .scroll .scroller {
+.scroll .scroller {
   cursor: pointer;
   transition: transform .5s;
 }
-.intrance .scroll p {
+.scroll p {
   font-size: 13px;
   font-style: italic;
 }
@@ -518,15 +523,15 @@ ul.bxslider {
     margin-top: 15px;
   }
 }
-.intrance .scroll .mouse-container {
+.scroll .mouse-container {
   height: 53px;
   position: relative;
   display: block;
 }
-.intrance .scroll .mouse-container a {
+.scroll .mouse-container a {
   display: inline-block;
 }
-.intrance .scroll .mouse {
+.scroll .mouse {
   position: relative;
   margin: 0 auto;
   display: block;
@@ -539,7 +544,7 @@ ul.bxslider {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-.intrance .scroll .mouse .scroll-down {
+.scroll .mouse .scroll-down {
   display: block;
   width: 5px;
   height: 8px;
@@ -896,7 +901,7 @@ ul.bxslider {
 
 .bg1 {
   background: url(../images/bg1.png) no-repeat;
-  height: 825px;
+  position: relative;
 }
 
 /* 1.25 dpr */
