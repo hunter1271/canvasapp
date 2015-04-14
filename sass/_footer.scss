@@ -73,6 +73,9 @@
 	a{
 		color:#d8d8d9;
 		text-decoration: underline;
+        &:hover{
+            color:$pink;
+        }
 	}
 }
 .grey_line{

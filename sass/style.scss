@@ -18,6 +18,44 @@
 	height: 825px;
 }
 
+/* 1.25 dpr */
+@media
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi){
+  .bg1{background: url(../images/pics2@2x) no-repeat;}
+}
+
+/* 1.3 dpr */
+@media
+(-webkit-min-device-pixel-ratio: 1.3),
+(min-resolution: 124.8dpi){
+  .bg1{background: url(../images/pics2@2x) no-repeat;}
+}
+
+/* 1.5 dpr */
+@media
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi){
+  .bg1{background: url(../images/pics2@2x) no-repeat;}
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .bg1{background: url(../images/pics2@2x) no-repeat;}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .bg1{background: url(../images/pics2@2x) no-repeat;}
+}
+
 .bg-pink{
 	background: url(../images/bg-pink.png) no-repeat;
 	height: 793px;

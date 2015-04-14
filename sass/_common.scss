@@ -30,8 +30,9 @@
 );
 
 $icons: sprite-map("small-icons/*.png",$spacing: 5px, $layout: vertical);
-$pink:#cd3c5e;
-$black:#61626b;
+$pink:#c24a6a;
+$pink2:#cd3c5e;
+$black:#61626b; 
 $white:#fff;
 $gotham_font:Gotham,  "Helvetica", "Arial", sans-serif;
 $gotham_font_b:GothamBold,  "Helvetica", "Arial", sans-serif;
@@ -64,6 +65,9 @@ h2{
   padding: 10px;
   text-transform: uppercase;
   font-weight: 300;
+}
+.btn:hover{
+  background: $pink2;
 }
 
 .btn-pink{
@@ -130,8 +134,7 @@ h2{
   content: "\e088";
 }
 
-*:focus,
-button{
+*:focus{
   outline:none;
   box-shadow:none;
 }
