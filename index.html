@@ -369,13 +369,18 @@ $(document).ready(function(){
     });
 
     $(".search-btn").on("click", function (){
-        $(".animated-input").animate({"width": "196px"}, 400);
-        $(".glyphicon-remove-circle").css("display","inline");
+        var inp = $(".animated-input");
+        if(inp.width() == 0){
+            inp.animate({"width": "196px"}, 400);
+            $(".glyphicon-remove-circle").css("display", "inline")
+        }else{
+            inp.animate({"width": "0"}, 400);
+            $(".glyphicon-remove-circle").css("display", "none")
+        }
     });
 
     $(".glyphicon-remove-circle").on("click",function (){
-        $(".animated-input").animate({"width": "0"}, 400);
-        $(".glyphicon-remove-circle").css("display","none");
+        $(this).parent().find(".animated-input").val('');
     });
 
 });
