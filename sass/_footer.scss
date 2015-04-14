@@ -2,7 +2,7 @@
 	color:$white;
 
 	.first{
-		margin: 70px 0 10px 0;
+		margin: 70px 0 20px 0;
 	}
 	.brand{
 
@@ -28,7 +28,7 @@
 		font: 12px $gotham_font_b;
 		text-transform: uppercase;
 		li{
-			margin: 15px 0;
+			margin: 23px 0;
 			cursor: pointer;
 		}
         li:hover{
@@ -50,6 +50,7 @@
 			  width: 285px;
 			  margin: 0 4px 0 0;
 			  @include border-radius(3px);
+              behavior: url(PIE.htc);
 		}
 		button{
 			font: 12px $gotham_font_b;

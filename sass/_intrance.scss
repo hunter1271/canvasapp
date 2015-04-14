@@ -73,6 +73,7 @@
     height:35px;
     border: solid 2px $black;
     border-radius: 25px;
+    behavior: url(PIE.htc);
     -webkit-animation: scroll-mouse 1.5s;
     animation: scroll-mouse 1.5s;
     -webkit-animation-iteration-count: infinite;
@@ -86,6 +87,7 @@
       height:8px;
       background:$black;
       border-radius:50%;
+      behavior: url(PIE.htc);
       margin:15% auto auto auto;
 
       -webkit-animation: scroll-inner 1.5s;

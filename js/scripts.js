@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
     $('.slider').bxSlider({
         slideWidth: 834,
         minSlides: 1,
@@ -6,7 +6,6 @@ $(document).ready(function(){
         moveSlides: 1,
         slideMargin: 0
     });
-
 
     var $container = $('.gallery-pictures');
     $container.isotope({
@@ -39,19 +38,20 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
+    var input = $(".animated-input");
     $(".search-btn").on("click", function (){
-        var inp = $(".animated-input");
-        if(inp.width() == 0){
-            inp.animate({"width": "196px"}, 400);
-            $(".glyphicon-remove-circle").css("display", "inline")
-        }else{
-            inp.animate({"width": "0"}, 400);
-            $(".glyphicon-remove-circle").css("display", "none")
+        if(input.width() == 0){
+            input.animate({"width": "196px"}, 400);
+            $(".glyphicon-remove-circle").css("display", "inline");
+            $(this).animate({"width":0}, 400).addClass("hidden");
+
         }
     });
 
     $(".glyphicon-remove-circle").on("click",function (){
-        $(this).parent().find(".animated-input").val('');
+        input.animate({"width": "0"}, 400);
+        $(".glyphicon-remove-circle").css("display", "none")
+        $(".search-btn").animate({"width":"56px"}, 400).removeClass("hidden");
     });
 
     /* *** 1-й блок лендинга *** */
