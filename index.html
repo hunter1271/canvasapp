@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/fixes.css" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
@@ -40,43 +41,47 @@
   </head>
   <body>
 
-  <div class="bg1">
-    <div class="container">
-      <div class="row intrance">
-        <div class="col-lg-12">
-            <div class="intrance_block center">              
-                <div class="ic icon-logo"></div>
-                <h1>Создай свою картину</h1>
-                <div class="intrance_text">
-                  <p>CanvasApp позволяет вам из любой фотографии на вашем компьютере или в</p>
-                  <p>сети интернет создавать картину которая будет достойным украшением</p>
-                  <p>вашего интерьера либо очень приятным и оригинальным подарком</p>
+  <div class="bg1-wrapper">
+    <div class="bg1">
+        <div class="container container-landing">
+          <div class="row intrance">
+            <div class="col-lg-12">
+                <div class="intrance_block center">
+                    <div class="ic icon-logo"></div>
+                    <h1 class="intrance_header">Создай свою картину</h1>
+                    <div class="intrance_text">
+                      <p>CanvasApp позволяет вам из любой фотографии на вашем компьютере или в</p>
+                      <p>сети интернет создавать картину которая будет достойным украшением</p>
+                      <p>вашего интерьера либо очень приятным и оригинальным подарком</p>
+                    </div>
+                    <button class="btn btn-pink btn-lg">Попробовать бесплатно</button>
+
+                    <div class="or-choose">
+                        <p class="or"><span class="line"></span>или<span class="line"></span></p>
+                        <p class="choose">выберите картину из галлереи</p>
+                    </div>
                 </div>
-                <button class="btn btn-pink">Попробовать бесплатно</button>
-                
-                <div class="or-choose">
-                    <p class="or"><span class="line"></span>или<span class="line"></span></p>                 
-                    <p class="choose">выберите картину из галлереи</p>
-                </div>  
             </div>
+          </div>
+        </div>
+        <div class="scroll center">
+          <div class='mouse-container'>
+              <a href="#one">
+                    <span class='mouse'>
+                        <span class='scroll-down'></span>
+                    </span>
+              </a>
+          </div>
+          <p>прокрути вниз <br/> и узнай как</p>
         </div>
       </div>
-    </div>
-    <div class="scroll center">
-      <div class='mouse-container'><a href="#one">
-                <span class='mouse'>
-                    <span class='scroll-down'></span>
-                </span></a>
-      </div>
-      <p>прокрути вниз <br/> и узнай как</p>
-    </div>
   </div>
     <div class="grey-line1"></div>
-    <div class="container" id="one">
+    <div class="container container-navigation" id="one">
       <div class="row">
         <div class="col-lg-12">
             <div class="navbar" role="navigation">
-              <div class="container-fluid">
+              <div class="container-fluid container-navbar">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -109,27 +114,36 @@
     <div class="container circles">
       <div class="row">
         <div class="col-lg-12">
-            <div class="center">              
+            <div class="center">
                 <h2>Создать свою картину очень просто</h2>
                 <p>Всего за 5 минут вы можете заказать картину и уже через 3 дня вы получите ее!</p>
                 <p>Оплата осуществляется только при получении</p>
             </div>
-            <div class="col-lg-4">
-              <div class="circle1"></div>
+            <div class="col-lg-4 col-circle col-circle1">
+              <div class="circle">
+                  <span class="ic icon-upload_icon"></span>
+                  <div class="number">1</div>
+              </div>
               <h4>Загрузите фото</h4>
               <div class="line"></div>
-              <p>C компьютера или прямо </p> 
+              <p>C компьютера или прямо </p>
               <p>из любимых социальных сетей</p>
             </div>
-            <div class="col-lg-4">
-              <div class="circle2"></div>
+            <div class="col-lg-4 col-circle col-circle2">
+              <div class="circle">
+                  <span class="ic icon-resize_icon"></span>
+                  <div class="number">2</div>
+              </div>
               <h4>Визуальный конструктор</h4>
               <div class="line"></div>
               <p>Поможет выбрать вам желаемый размер,</p>
               <p>  тип подрамника и оформление краев</p>
             </div>
-            <div class="col-lg-4">
-              <div class="circle3"></div>
+            <div class="col-lg-4 col-circle col-circle3">
+              <div class="circle">
+                  <span class="ic icon-image_icon"></span>
+                  <div class="number">3</div>
+              </div>
               <h4>Получите картину</h4>
               <div class="line"></div>
               <p>Холст будет аккуратно натянут на подрамник,  </p>
@@ -140,7 +154,7 @@
     </div>
 </div>
 
-    <div class="container why-we">
+    <div class="container why-we advantages">
       <div class="row">
         <div class="col-lg-12 center">
             <h2>Почему именно мы?</h2>
@@ -176,11 +190,8 @@
             <p>Благодаря галерейной натяжке и 4 вариантам  оформления краев картины, вы сможете создать уникальный и интересный эффект.</p>
           </div>
           <div class="col-lg-4">
-            <div class="small-icon lineika"></div>
-            <div class="small-icon circul"></div>
-            <div class="small-icon hunter"></div>
             <div class="ic icon-icon05"></div>
-            <h4>качество сборки</h4>
+            <h4>Качество сборки</h4>
             <span class="small-line"></span>
             <p>Натяжка холстов на подрамник производится  настоящими профессионалами и контролируется на всех этапах.</p>
           </div>
@@ -199,32 +210,32 @@
       <div class="row">
         <div class="col-lg-12">
             <div class="slider">
-                <div class="slide1">
+                <div class="slide">
                   <img src="images/farid-sagiev.png" alt="">
-                  <h3>Фарид Сагиев</h3>
-                  <span>г. Казань</span>
-                  <p>Я фотограф и обожаю видеть свои творения на стенах моего дома. Canvas App </p>
-                  <p>мне очень помог воплотить мои идеи в жизнь. Доставка заняла всего </p>
-                  <p>около 3-4 дней и качество картинки меня очень порадовало!</p>
+                  <h3 class="slide-header">Фарид Сагиев</h3>
+                  <span class="slide-sub">г. Казань</span>
+                  <p class="slide-text">Я фотограф и обожаю видеть свои творения на стенах моего дома. Canvas App мне очень помог
+                      воплотить мои идеи в жизнь. Доставка заняла всего около 3-4 дней
+                      и качество картинки меня очень порадовало!</p>
                 </div>
-                <div class="slide2">
+                <div class="slide">
                   <img src="images/farid-sagiev.png" alt="">
-                  <h3>Фарид Сагиев</h3>
-                  <span>г. Казань</span>
-                  <p>Я фотограф и обожаю видеть свои творения на стенах моего дома. Canvas App </p>
-                  <p>мне очень помог воплотить мои идеи в жизнь. Доставка заняла всего </p>
-                  <p>около 3-4 дней и качество картинки меня очень порадовало!</p>
+                  <h3 class="slide-header">Фарид Сагиев</h3>
+                  <span class="slide-sub">г. Казань</span>
+                  <p class="slide-text">Я фотограф и обожаю видеть свои творения на стенах моего дома. Canvas App мне очень помог
+                      воплотить мои идеи в жизнь. Доставка заняла всего около 3-4 дней
+                      и качество картинки меня очень порадовало!</p>
                 </div>
-                <div class="slide3">
+                <div class="slide">
                   <img src="images/farid-sagiev.png" alt="">
-                  <h3>Фарид Сагиев</h3>
-                  <span>г. Казань</span>
-                  <p>Я фотограф и обожаю видеть свои творения на стенах моего дома. Canvas App </p>
-                  <p>мне очень помог воплотить мои идеи в жизнь. Доставка заняла всего </p>
-                  <p>около 3-4 дней и качество картинки меня очень порадовало!</p>
+                  <h3 class="slide-header">Фарид Сагиев</h3>
+                  <span class="slide-sub">г. Казань</span>
+                  <p class="slide-text">Я фотограф и обожаю видеть свои творения на стенах моего дома. Canvas App мне очень помог
+                      воплотить мои идеи в жизнь. Доставка заняла всего около 3-4 дней
+                      и качество картинки меня очень порадовало!</p>
                 </div>
             </div>
-            <button class="btn btn-white">Написать нам</button>
+            <button class="btn btn-lg btn-white">Написать нам</button>
         </div>
       </div>
     </div>
@@ -236,27 +247,27 @@
     <div class="container">
       <div class="row gallery">
         <div class="col-lg-12">
-            <div class="center">              
+            <div class="center interesting">
               <h2>Уже заинтересованы?</h2>
-              <button class="btn btn-pink">Создать картину</button>
+              <button class="btn btn-lg btn-pink">Создать картину</button>
                 <div class="or-choose">
-                    <p class="or"><span class="line"></span>или<span class="line"></span></p>                 
+                    <p class="or"><span class="line"></span>или<span class="line"></span></p>
                     <p class="choose">выберите картину из галлереи</p>
-                </div>  
+                </div>
             </div>
-            <div class="gallery-block">
+            <div class="row gallery-block">
                   <ul class="gallery-nav">
                     <li data-sort-by="*" class="active">Все картины</li>
                     <li data-sort-by=".nature">природа</li>
                     <li data-sort-by=".people">люди</li>
                     <li data-sort-by=".archi">архитектура</li>
-                  </ul>                  
+                  </ul>
                   <div class="search">
                       <span class="ic icon-search-ic"></span>
                       <input type="text"  class="animated-input" placeholder="Начните вводить"/>
                       <span class="glyphicon glyphicon-remove-circle"></span>
                       <button class="btn search-btn">Поиск</button>
-                  </div>  
+                  </div>
                 <div class="gallery-pictures">
                       <div class="gal-pic nature"><img src="images/gallery/foto1.png" alt=""></div>
                       <div class="gal-pic people"><img src="images/gallery/foto2.png" alt=""></div>
@@ -269,7 +280,7 @@
                       <div class="gal-pic nature"><img src="images/gallery/foto4.png" alt=""></div>
                 </div>
                 <div class="center">
-                    <button class="btn btn-pink isotope-append">Загрузить еще</button>                  
+                    <button class="btn btn-lg btn-pink isotope-append">Загрузить еще</button>
                 </div>
             </div>
 

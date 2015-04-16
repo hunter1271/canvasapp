@@ -12,9 +12,9 @@ $(function(){
         itemSelector: '.gal-pic',
         masonry: {
             columnWidth: 280,
-            gutter:4
+            gutter:16
         },
-        filter: "*",
+        filter: "*"
     });
 
     $(".gallery-nav").on("click", "li", function(){
@@ -23,12 +23,12 @@ $(function(){
         var sortByValue = $(this).attr('data-sort-by');
         $container.isotope({ filter: sortByValue });
         return false;
-    })
+    });
 
     $(".gallery-block").on("click",".isotope-append", function(){
         var gal_pic = $(".gal-pic").eq(1).clone();
         $container.append(gal_pic).isotope( 'appended', gal_pic );
-    })
+    });
 
     $('.mouse-container a').on('click',function(event){
         var $anchor = $(this);
@@ -53,10 +53,5 @@ $(function(){
         $(".glyphicon-remove-circle").css("display", "none")
         $(".search-btn").animate({"width":"56px"}, 400).removeClass("hidden");
     });
-
-    /* *** 1-й блок лендинга *** */
-    var h = window.innerHeight;
-    var wrap = document.querySelector(".bg1");
-    wrap.style.height = h + "px";
 
 });
