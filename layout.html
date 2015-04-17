@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CanvasApp layout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ca.theme.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="wrapper-navigation top-line-pink bottom-line-grey">
+            <div class="container container-navigation">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navbar" role="navigation">
+                          <div class="container-fluid container-navbar">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#"><span class="ic icon-logo"></span> <span class="capp">CanvasApp</span></a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                              <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Главная</a></li>
+                                <li><a href="#">Условия оплаты и доставки</a></li>
+                                <li><a href="#">Контакты</a></li>
+                              </ul>
+                              <ul class="nav navbar-nav navbar-right">
+                                <li><i class="ic icon-fb"></i></li>
+                                <li><i class="ic icon-ins"></i></li>
+                                <li><i class="ic icon-vk"></i></li>
+                              </ul>
+                            </div><!--/.nav-collapse -->
+                          </div><!--/.container-fluid -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-heading">
+            <div class="container">
+                <div class="row row-heading">
+                    <div class="col-lg-12">
+                        <h3 class="header underlined">Конструктор</h3>
+                        <div class="btn-group group-preview" data-toggle="buttons">
+                          <label class="btn btn-pink btn-preview disabled">
+                              <input type="checkbox" autocomplete="off"><span class="ic icon-view-ic"></span> Предпросмотр
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper-constructor">
+            <div class="container container-constructor">
+                <div class="row row-constructor">
+                    <div class="col-lg-12 col-constructor">
+                        <div class="screen screen-select-image uploading">
+                            <h4 class="ic icon-upload_icon underlined"></h4>
+                            <p class="desc desc-select">Перетащите изображение сюда или выберите из компьютера</p>
+                            <button class="btn btn-upload btn-pink">Выбрать изображение</button>
+                            <p class="desc desc-uploading">Изображение загружается...</p>
+                            <div class="progress progress-uploading">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-toolbox"></div>
+        </div>
+        <div class="wrapper-tools top-line-pink">
+            <div class="container container-tools">
+                <div class="row">
+                    <div class="col-lg-12 col-tools mode-image no-image">
+                        <div class="pointer"></div>
+                        <ul class="row tools">
+                            <li class="col-lg-3 tool tool-image">
+                                <span class="circle">01</span>
+                                <span class="title underlined">Изображение</span>
+                                <span class="value">Изображение не выбрано</span>
+                            </li>
+                            <li class="col-lg-3 tool tool-size">
+                                <span class="circle">02</span>
+                                <span class="title underlined">Размер</span>
+                                <span class="value">Выберите размер</span>
+                            </li>
+                            <li class="col-lg-3 tool tool-material">
+                                <span class="circle">03</span>
+                                <span class="title underlined">Материал</span>
+                                <span class="value">Материал не выбран</span>
+                            </li>
+                            <li class="col-lg-3 tool tool-order">
+                                <button class="btn btn-pink btn-order">Заказать</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

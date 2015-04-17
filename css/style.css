@@ -22,6 +22,7 @@
   src: url('../fonts/GothamProBold/GothamProBold.eot?1428909569');
   src: url('../fonts/GothamProBold/GothamProBold.eot?&1428909569#iefix') format('embedded-opentype'), url('../fonts/GothamProBold/GothamProBold.woff?1428909569') format('woff'), url('../fonts/GothamProBold/GothamProBold.ttf?1428909569') format('truetype');
 }
+
 body {
   color: #61626b;
   font: 14px Georgia, "Helvetica", "Arial", sans-serif;
@@ -145,6 +146,7 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
+/*Move to fallback styles*/
 .circle1 {
   display: inline-block;
   background-image: url('../images/small-icons-s01271a08a1.png');
@@ -163,42 +165,9 @@ button::-moz-focus-inner {
   background-position: 0 -328px;
 }
 
-.circul {
-  display: inline-block;
-  background-image: url('../images/small-icons-s01271a08a1.png');
-  background-position: 0 -492px;
-}
-
-.hunter {
-  display: inline-block;
-  background-image: url('../images/small-icons-s01271a08a1.png');
-  background-position: 0 -524px;
-}
-
-.lineika {
-  display: inline-block;
-  background-image: url('../images/small-icons-s01271a08a1.png');
-  background-position: 0 -549px;
-}
-
 .circle1, .circle2, .circle3 {
   width: 158px;
   height: 159px;
-}
-
-.circul {
-  width: 14px;
-  height: 27px;
-}
-
-.hunter {
-  width: 22px;
-  height: 20px;
-}
-
-.lineika {
-  width: 21px;
-  height: 22px;
 }
 
 .ic {
