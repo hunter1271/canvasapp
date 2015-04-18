@@ -73,21 +73,28 @@
             <div class="container container-constructor">
                 <div class="row row-constructor">
                     <div class="col-lg-12 col-constructor">
-                        <div class="screen screen-select-image uploading">
-                            <h4 class="ic icon-upload_icon underlined"></h4>
-                            <p class="desc desc-select">Перетащите изображение сюда или выберите из компьютера</p>
-                            <button class="btn btn-upload btn-pink">Выбрать изображение</button>
-                            <p class="desc desc-uploading">Изображение загружается...</p>
-                            <div class="progress progress-uploading">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                    <span class="sr-only">60% Complete</span>
-                                </div>
+                        <div class="screen screen-image">
+                            <div class="wrapper-image">
+                                <img class="image" src="images/constructor/apple-1000.jpg" height="400" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="placeholder-toolbox"></div>
+        </div>
+        <div class="wrapper-toolbar">
+            <ul class="toolbar" role="toolbar">
+                <li class="tool-item item-change-image">
+                    <button class="btn btn-sm btn-pink">Сменить изображние</button>
+                </li>
+                <li class="tool-item item-auto-improve checkbox">
+                    <label>
+                        <input type="checkbox"> Улучшить изображение
+                    </label>
+                </li>
+                <li class="hint-item">Изображение вышедшее за белую раму не будет распечатано.</li>
+            </ul>
         </div>
         <div class="wrapper-tools top-line-pink">
             <div class="container container-tools">

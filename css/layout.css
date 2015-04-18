@@ -8,7 +8,7 @@
     position: absolute;
     top: 163px;
     bottom: 0;
-    padding-bottom: 125px;
+    padding-bottom: 173px;
     min-height: 400px;
     width: 100%;
 }
@@ -25,7 +25,7 @@
   font: 12px GothamBold, "Helvetica", "Arial", sans-serif;
   color: #61626b;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: inherit;
   padding: 18px 10px;
 }
 .navbar .navbar-brand {
@@ -119,7 +119,7 @@
 .wrapper-constructor .placeholder-toolbox {
     position: relative;
     width: 100%;
-    height: 125px;
+    height: 173px;
     bottom: 0;
 }
 
@@ -128,18 +128,16 @@
     min-height: 500px;
     max-height: 800px;
     padding: 0 0 0 0;
-    border: dashed 2px #d7d7d7;
-    border-radius: 3px;
-    background-color: #f3f3f5;
+
 }
 
 .wrapper-constructor .container-constructor .row-constructor,
 .wrapper-constructor .container-constructor .row-constructor .col-constructor {
     height: 100%;
+    overflow: hidden;
 }
 
 .wrapper-constructor .container-constructor .row-constructor .col-constructor {
-    display: table;
 }
 
 /*Constructor workbench end*/
@@ -149,12 +147,23 @@
 }
 
 .wrapper-constructor .col-constructor .screen-select-image {
-    display: table-cell;
+    display: table;
+    width: 100%;
+    height: 100%;
     vertical-align: middle;
-    width: 400px;
-    margin: auto auto auto auto;
+    border: dashed 2px #d7d7d7;
+    border-radius: 3px;
+    background-color: #f3f3f5;
     text-align: center;
 }
+
+.wrapper-constructor .col-constructor .screen-select-image .select-image-content {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .wrapper-constructor .col-constructor .screen-select-image h4{
     font-size: 70px;
     color: #4c4c56;
@@ -192,6 +201,20 @@
     display: block;
 }
 /*Screen select image end*/
+
+/*Screen image preview start*/
+.wrapper-constructor .col-constructor .screen-image {
+    width: 100%;
+}
+
+.wrapper-constructor .col-constructor .screen-image .wrapper-image {
+    text-align: center;
+}
+
+.wrapper-constructor .col-constructor .screen-image .wrapper-image img {
+    max-height: 100%;
+}
+/*Screen image preview end*/
 
 /*Constructor toolbox start*/
 .wrapper-tools {
@@ -312,7 +335,57 @@
     background-color: #ffffff;
     color: #37383e;
 }
-
 /*Constructor toolbox end*/
+
+/*Constructor toolbar start*/
+.wrapper-toolbar{
+    width: 100%;
+    height: 87px;
+    position: fixed;
+    bottom: 83px;
+    padding: 10px 0 0 0;
+    background-color: #ffffff;
+}
+
+.wrapper-toolbar .toolbar {
+    position: relative;
+    display: block;
+    width: 530px;
+    height: 50px;
+    margin:0 auto 0 auto;
+    padding: 9px 12px 2px 12px;
+    background-color: #383840;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(250,250,250,0.7);
+}
+
+.wrapper-toolbar .toolbar .tool-item {
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+.wrapper-toolbar .toolbar .hint-item {
+    display: block;
+    width: 230px;
+    position: absolute;
+    right: -243px;
+    font-size: 13px;
+}
+
+.wrapper-toolbar .toolbar .tool-item.item-change-image {
+
+}
+
+.wrapper-toolbar .toolbar .tool-item.item-auto-improve {
+    float: right;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.wrapper-toolbar .toolbar .tool-item.item-auto-improve input[type="checkbox"] {
+    margin-top: 1px;
+}
+/*Constructor toolbar end*/
 
 

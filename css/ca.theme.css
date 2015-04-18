@@ -94,6 +94,12 @@ button::-moz-focus-inner {
     padding: 14px 28px;
 }
 
+.btn-sm {
+    padding: 11px 20px 9px 20px;
+    font-size: 10px;
+    line-height: 1em;
+}
+
 .btn:hover {
   background: #cd3c5e;
 }
@@ -101,7 +107,6 @@ button::-moz-focus-inner {
 .btn-pink {
   background: #c24a6a;
   color: #fff;
-  /*width: 260px;*/
 }
 
 .btn-pink:hover,
