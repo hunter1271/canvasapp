@@ -182,3 +182,43 @@ button::-moz-focus-inner {
     background-color: #cd3c5e;
     box-shadow: none;
 }
+
+.zoom-controls {
+    padding: 0;
+    overflow: hidden;
+}
+
+.zoom-controls .zoom-track {
+    position: relative;
+    width: 100%;
+    min-width: 50px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: #4b4b53;
+    cursor: pointer;
+}
+
+.zoom-controls .zoom-track .zoom-handle {
+    position: absolute;
+    left: 50px;
+    top: -7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.zoom-controls .zoom-track .zoom-handle:hover {
+    box-shadow: 0 0 4px #37383e;
+}
+
+.zoom-controls .zoom-track .good-quality-zone {
+    float: left;
+    width: 180px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: #a5a6aa;
+}

@@ -75,7 +75,7 @@
                     <div class="col-lg-12 col-constructor">
                         <div class="screen screen-image">
                             <div class="wrapper-image">
-                                <img class="image" src="images/constructor/apple-1000.jpg" height="400" />
+                                <div style="height: 500px; background-color: grey"></div>
                             </div>
                         </div>
                     </div>
@@ -84,14 +84,19 @@
             <div class="placeholder-toolbox"></div>
         </div>
         <div class="wrapper-toolbar">
-            <ul class="toolbar set-image" role="toolbar">
-                <li class="tool-item item-change-image">
-                    <button class="btn btn-sm btn-pink">Сменить изображние</button>
+            <ul class="toolbar set-cropper" role="toolbar">
+                <li class="tool-item item-zoomer">
+                    <div class="ic icon-minus-ic minus"></div>
+                    <div class="zoom-controls">
+                        <div class="zoom-track">
+                            <div class="zoom-handle"></div>
+                            <div class="good-quality-zone"></div>
+                        </div>
+                    </div>
+                    <div class="ic icon-plus-ic plus"></div>
                 </li>
-                <li class="tool-item item-auto-improve checkbox">
-                    <label>
-                        <input type="checkbox"> Улучшить изображение
-                    </label>
+                <li class="tool-item item-change-size">
+                    <button class="btn btn-sm btn-pink btn-change-size">Изменить размер</button>
                 </li>
                 <li class="hint-item">Изображение вышедшее за белую раму не будет распечатано.</li>
             </ul>
