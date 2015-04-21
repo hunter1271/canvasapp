@@ -216,6 +216,112 @@
 }
 /*Screen image preview end*/
 
+/*Screen select image start*/
+.screen-select-size {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.screen-select-size .select-size-content {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.screen-select-size .select-size-content .select-size-dialog {
+    position: relative;
+    height: 494px;
+    border-radius: 3px;
+    background: url("../images/interior.jpg") no-repeat 0 0;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar {
+    position: absolute;
+    left: 320px;
+    bottom: 120px;
+    padding: 10px 16px 10px 16px;
+    margin: 0;
+    width: 530px;
+    height: 50px;
+    background: #e7caa2;
+    border-radius: 3px;
+    list-style: none;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool{
+    float: left;
+    padding: 0 6px 0 2px;
+    margin: 0;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .btn .title {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool-proportion .btn .title {
+    min-width: 105px;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool-proportion .btn .caret {
+    margin-top: -2px;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool-size .btn {
+    padding: 11px 11px 7px 12px;;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool-size .btn .title {
+    min-width: 120px;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool-select {
+    float: right;
+    padding-right: 0;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .toolbar .tool-select .btn {
+    min-width: 158px;
+}
+
+.dropup .dropdown-menu.menu-proportions li {
+    padding-bottom: 22px;
+}
+
+.dropup .dropdown-menu .menu-item.landscape .ic{
+    font-size: 28px;
+    padding: 6px 18px 6px 16px;
+}
+
+.dropup .dropdown-menu .menu-item.square .ic{
+    padding: 14px 10px 14px 10px;
+}
+
+.dropup .dropdown-menu .menu-item.portrait .ic {
+    padding: 12px 4px 12px 4px;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .wall-area {
+    position: absolute;
+    left: 320px;
+    bottom: 180px;
+    height: 275px;
+    width: 530px;
+}
+
+.screen-select-size .select-size-content .select-size-dialog .wall-area .preview {
+    position: absolute;
+    left: 145px;
+    bottom: 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px #383838;
+
+}
+/*Screen select image end*/
+
 /*Constructor toolbox start*/
 .wrapper-tools {
     position: fixed;

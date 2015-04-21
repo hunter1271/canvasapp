@@ -139,6 +139,24 @@ button::-moz-focus-inner {
     color: #ffffff;
 }
 
+.btn.dropdown-toggle {
+    padding: 11px 11px 6px 12px;
+    background: #ffffff;
+    color: #37383e;
+}
+
+.btn.dropdown-toggle .ic {
+    color: #37383e;
+    display: inline-block;
+    min-width: 13px;
+    margin: -1px 0 -3px 0;
+    text-align: center;
+}
+
+.btn.dropdown-toggle:hover .caret {
+    color: #df496c
+}
+
 .top-line-pink {
     border-top: solid 2px #cd3c5e;
 }
@@ -221,4 +239,93 @@ button::-moz-focus-inner {
     border: none;
     border-radius: 2px;
     background-color: #a5a6aa;
+}
+
+.toolbar .dropup {
+    position: relative;
+    line-height: 1em; !important;
+}
+
+.dropup .dropdown-menu {
+    margin-bottom: 19px;
+    border: none;
+    padding: 0 0 0 0;
+}
+
+.dropup .dropdown-menu li {
+    min-width: 260px;
+    padding: 12px 10px 8px 10px;
+    border: none;
+    border-left: solid 3px #ffffff;
+    cursor: pointer;
+}
+
+.dropup .dropdown-menu li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.dropup .dropdown-menu li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.dropup .dropdown-menu li.active,
+.dropup .dropdown-menu li.active:hover {
+    border-color: #c24a6a;
+}
+
+.dropup .dropdown-menu li:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+}
+
+.dropup .dropdown-menu li>a {
+    font: 14px GothamBold, "Helvetica", "Arial", sans-serif;
+    line-height: 12px;
+    padding: 3px 8px 3px 4px;
+    margin: 0 0 3px 0;
+    letter-spacing: 0;
+    color: #37383e;
+    background-color: transparent;
+}
+
+.dropup .dropdown-menu li.active>a {
+    color: #37383e;
+}
+
+.dropup .dropdown-menu li.active>a:hover {
+    background-color: transparent;
+}
+
+.dropup .dropdown-menu li .ic {
+    float: left;
+    font-size: 18px;
+    padding: 6px 4px 6px 4px;
+    margin: 6px 8px 4px 3px;
+    border-radius: 2px;
+    background-color: #606166;
+    color: #ffffff;
+}
+
+.dropup .dropdown-menu li .item-description {
+    display: block;
+    font-size: 12px;
+    padding: 6px 4px 6px 4px;
+}
+
+.dropup .menu-arrow {
+    display: none;
+    position: absolute;
+    left: 16px;
+    top: -19px;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    border-top: solid 5px #ffffff;
+    z-index: 1001;
+}
+
+.dropup.open .menu-arrow {
+    display: block;
 }
