@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CanvasApp layout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ca.theme.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="wrapper-navigation top-line-pink bottom-line-grey">
+            <div class="container container-navigation">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navbar" role="navigation">
+                          <div class="container-fluid container-navbar">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#"><span class="ic icon-logo"></span> <span class="capp">CanvasApp</span></a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                              <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Главная</a></li>
+                                <li><a href="#">Условия оплаты и доставки</a></li>
+                                <li><a href="#">Контакты</a></li>
+                              </ul>
+                              <ul class="nav navbar-nav navbar-right">
+                                <li><i class="ic icon-fb"></i></li>
+                                <li><i class="ic icon-ins"></i></li>
+                                <li><i class="ic icon-vk"></i></li>
+                              </ul>
+                            </div><!--/.nav-collapse -->
+                          </div><!--/.container-fluid -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-heading">
+            <div class="container">
+                <div class="row row-heading">
+                    <div class="col-lg-12">
+                        <h3 class="header underlined">Конструктор</h3>
+                        <div class="btn-group group-preview" data-toggle="buttons">
+                          <label class="btn btn-pink btn-preview">
+                              <input type="checkbox" autocomplete="off"><span class="ic icon-view-ic"></span> Предпросмотр
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper-constructor">
+            <div class="container container-constructor">
+                <div class="row row-constructor">
+                    <div class="col-lg-12 col-constructor">
+                        <div class="screen screen-image">
+                            <div class="wrapper-image">
+                                <div style="height: 500px; background-color: grey"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-toolbox"></div>
+        </div>
+        <div class="wrapper-toolbar">
+            <ul class="toolbar set-material" role="toolbar">
+                <li class="tool-item item-zoomer">
+                    <div class="ic icon-minus-ic minus"></div>
+                    <div class="zoom-controls">
+                        <div class="zoom-track">
+                            <div class="zoom-handle"></div>
+                            <div class="good-quality-zone"></div>
+                        </div>
+                    </div>
+                    <div class="ic icon-plus-ic plus"></div>
+                </li>
+                <li class="tool-item item-change-size">
+                    <button class="btn btn-sm btn-pink btn-change-size">Изменить размер</button>
+                </li>
+
+                <li class="tool-item item-canvas">
+                    <div class="dropup dropup-dark open">
+                        <button id="canvasSelector" class="btn btn-sm btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="title">Матовый</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="canvasSelector">
+                            <li class="menu-item active">
+                                <a class="item-title">Матовый холст</a>
+                                <span class="item-description">Матовый холст обладает матовой равномерной текстурой, которая создаёт мягкий отражённый свет.</span>
+                            </li>
+                            <li class="menu-item">
+                                <a class="item-title">Глянцевый холст</a>
+                                <span class="item-description">Глянцевый холст отличается повышенной яркостью и контрастностью изображения.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tool-item item-frame">
+                    <div class="dropup dropup-dark">
+                        <button id="frameSelector" class="btn btn-sm btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="title">Обычный (2 см.)</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="frameSelector">
+                            <li class="menu-item active">
+                                <a class="item-title">Обычный (2 см.)</a>
+                                <span class="item-description">Матовый холст обладает матовой равномерной текстурой, которая создаёт мягкий отражённый свет.</span>
+                            </li>
+                            <li class="menu-item">
+                                <a class="item-title">Галерейный (3.5 см.)</a>
+                                <span class="item-description">Глянцевый холст отличается повышенной яркостью и контрастностью изображения.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tool-item item-edge-pattern">
+                    <div class="dropup dropup-dark">
+                        <button id="edgePatternSelector" class="btn btn-sm btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="title">Интерполяция</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="edgePatternSelector">
+                            <li class="menu-item">
+                                <a class="item-title">Обернуть</a>
+                                <span class="item-description">Матовый холст обладает матовой равномерной текстурой, которая создаёт мягкий отражённый свет.</span>
+                            </li>
+                            <li class="menu-item">
+                                <a class="item-title">Отразить</a>
+                                <span class="item-description">Глянцевый холст отличается повышенной яркостью и контрастностью изображения.</span>
+                            </li>
+                            <li class="menu-item">
+                                <a class="item-title">Повторить</a>
+                                <span class="item-description">Глянцевый холст отличается повышенной яркостью и контрастностью изображения.</span>
+                            </li>
+                            <li class="menu-item active">
+                                <a class="item-title">Интерполяция</a>
+                                <span class="item-description">Глянцевый холст отличается повышенной яркостью и контрастностью изображения.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hint-item">Изображение вышедшее за белую раму не будет распечатано.</li>
+            </ul>
+        </div>
+        <div class="wrapper-tools top-line-pink">
+            <div class="container container-tools">
+                <div class="row">
+                    <div class="col-lg-12 col-tools mode-material">
+                        <div class="pointer"></div>
+                        <ul class="row tools">
+                            <li class="col-lg-3 tool tool-image">
+                                <span class="circle">01</span>
+                                <span class="title underlined">Изображение</span>
+                                <span class="value">Изображение не выбрано</span>
+                            </li>
+                            <li class="col-lg-3 tool tool-size">
+                                <span class="circle">02</span>
+                                <span class="title underlined">Размер</span>
+                                <span class="value">Выберите размер</span>
+                            </li>
+                            <li class="col-lg-3 tool tool-material">
+                                <span class="circle">03</span>
+                                <span class="title underlined">Материал</span>
+                                <span class="value">Материал не выбран</span>
+                            </li>
+                            <li class="col-lg-3 tool tool-order">
+                                <div class="wrapper-price">
+                                    <p class="price">
+                                        <span class="amount">11800</span>
+                                        <span class="currency">руб.</span>
+                                    </p>
+                                    <p class="price-info">Доп. информация</p>
+                                </div>
+                                <button class="btn btn-pink btn-order">Заказать</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

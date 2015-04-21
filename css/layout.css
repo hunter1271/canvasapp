@@ -344,19 +344,26 @@
 
 .wrapper-tools .tools .tool {
     position: relative;
-    padding: 0 2px 0 68px;
+    padding: 0 2px 0 67px;
     height: 83px;
+    border-left: solid 1px #32323a;
     cursor: pointer;
 }
 
-.wrapper-tools .image-ready .tools .tool:hover {
+.wrapper-tools .tools .tool:hover {
     background-color: #32323a;
+}
+
+.wrapper-tools .no-image .tools .tool:hover,
+.wrapper-tools .tools .tool.tool-order:hover {
+    background-color: transparent;
+    cursor: default;
 }
 
 .wrapper-tools .tools .tool .circle {
     position: absolute;
     top: 22px;
-    left: 16px;
+    left: 15px;
     display: block;
     width: 43px;
     height: 42px;
@@ -398,6 +405,31 @@
     margin: 4px 0 0 0;
     color: #ffffff;
     font-size: 12px;
+}
+
+.wrapper-tools .tools .tool.tool-order {
+    padding-left: 10px;
+}
+
+.wrapper-tools .tools .tool-order .wrapper-price {
+    float: left;
+}
+
+.wrapper-tools .tools .tool-order .wrapper-price .price {
+    font: 20px GothamBold, "Helvetica", "Arial", sans-serif;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 27px 0 0 5px;
+}
+
+.wrapper-tools .tools .tool-order .wrapper-price .price .currency {
+    font-size: 12px;
+}
+
+.wrapper-tools .tools .tool-order .price-info {
+    font-size: 12px;
+    margin: 0 2px 2px 4px;
+    color: #9a9ba0;
 }
 
 .wrapper-tools .tools .tool.tool-order .btn-order{
@@ -533,12 +565,33 @@
     padding-right: 10px;
 }
 
+.wrapper-toolbar .toolbar.set-material .tool-item {
+    padding: 2px 6px 2px 4px;
+}
+
+.wrapper-toolbar .toolbar.set-material .tool-item .dropup .dropdown-toggle .title {
+    display: inline-block;
+    min-width: 120px;
+    text-align: left;
+}
+
+.wrapper-toolbar .toolbar.set-material .tool-item.item-frame .dropup .dropdown-toggle .title {
+    min-width: 125px;
+}
 
   /* Tool set */
 .wrapper-toolbar .toolbar.set-image .tool-item.item-change-image,
-.wrapper-toolbar .toolbar.set-image .tool-item.item-auto-improve,
+.wrapper-toolbar .toolbar.set-image .tool-item.item-auto-improve {
+    display: block;
+}
+
 .wrapper-toolbar .toolbar.set-cropper .tool-item.item-zoomer,
 .wrapper-toolbar .toolbar.set-cropper .tool-item.item-change-size {
+    display: block;
+}
+.wrapper-toolbar .toolbar.set-material .tool-item.item-canvas,
+.wrapper-toolbar .toolbar.set-material .tool-item.item-frame,
+.wrapper-toolbar .toolbar.set-material .tool-item.item-edge-pattern {
     display: block;
 }
 /*Constructor toolbar end*/
