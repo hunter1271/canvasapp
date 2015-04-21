@@ -314,11 +314,11 @@ button::-moz-focus-inner {
     padding: 6px 4px 6px 4px;
 }
 
-.dropup .menu-arrow {
-    display: none;
+.dropup .dropdown-menu li:last-child:after {
+    content: ' ';
     position: absolute;
     left: 16px;
-    top: -19px;
+    bottom: -10px;
     width: 0;
     height: 0;
     border: solid 5px transparent;
@@ -326,6 +326,6 @@ button::-moz-focus-inner {
     z-index: 1001;
 }
 
-.dropup.open .menu-arrow {
-    display: block;
+.dropup .dropdown-menu li:last-child:hover:after{
+    border-top: solid 5px #e5e5e5;
 }
