@@ -237,6 +237,7 @@
     background: url("../images/interior.jpg") no-repeat 0 0;
 }
 
+/*TODO Obselete styles */
 .screen-select-size .select-size-content .select-size-dialog .toolbar {
     position: absolute;
     left: 320px;
@@ -271,7 +272,7 @@
 }
 
 .screen-select-size .select-size-content .select-size-dialog .toolbar .tool-size .btn {
-    padding: 11px 11px 7px 12px;;
+    padding: 11px 11px 6px 12px;;
 }
 
 .screen-select-size .select-size-content .select-size-dialog .toolbar .tool-size .btn .title {
@@ -285,6 +286,16 @@
 
 .screen-select-size .select-size-content .select-size-dialog .toolbar .tool-select .btn {
     min-width: 158px;
+}
+
+.screen-select-size .select-size-content .description {
+    position: absolute;
+    width: 345px;
+    left: 405px;
+    bottom: 64px;
+    text-align: center;
+    color: #ffffff;
+
 }
 
 .dropup .dropdown-menu.menu-proportions li {
@@ -314,7 +325,7 @@
 
 .screen-select-size .select-size-content .select-size-dialog .wall-area .preview {
     position: absolute;
-    left: 145px;
+    left: 130px;
     bottom: 20px;
     border-radius: 2px;
     box-shadow: 0 2px 10px #383838;
@@ -579,6 +590,44 @@
     min-width: 125px;
 }
 
+.wrapper-toolbar .toolbar .btn .title {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+.wrapper-toolbar .toolbar .tool-proportion .btn .title {
+    min-width: 105px;
+}
+
+.wrapper-toolbar .toolbar .tool-proportion .btn .caret {
+    margin-top: -2px;
+}
+
+.wrapper-toolbar .toolbar .tool-size .btn {
+    padding: 11px 11px 6px 12px;;
+}
+
+.wrapper-toolbar .toolbar .tool-size .btn .title {
+    min-width: 120px;
+}
+
+.wrapper-toolbar .toolbar .tool-select-size {
+    float: right;
+    padding-right: 0;
+}
+
+.wrapper-toolbar .toolbar .tool-select-size .btn {
+    min-width: 158px;
+}
+
+.wrapper-toolbar .toolbar .tool-proportion,
+.wrapper-toolbar .toolbar .tool-size,
+.wrapper-toolbar .toolbar .tool-select-size {
+    padding: 0 6px 0 2px;
+    margin: 0;
+}
+
   /* Tool set */
 .wrapper-toolbar .toolbar.set-image .tool-item.item-change-image,
 .wrapper-toolbar .toolbar.set-image .tool-item.item-auto-improve {
@@ -592,6 +641,12 @@
 .wrapper-toolbar .toolbar.set-material .tool-item.item-canvas,
 .wrapper-toolbar .toolbar.set-material .tool-item.item-frame,
 .wrapper-toolbar .toolbar.set-material .tool-item.item-edge-pattern {
+    display: block;
+}
+
+.wrapper-toolbar .toolbar.set-size-selector .tool-item.tool-proportion,
+.wrapper-toolbar .toolbar.set-size-selector .tool-item.tool-size,
+.wrapper-toolbar .toolbar.set-size-selector .tool-item.tool-select-size {
     display: block;
 }
 /*Constructor toolbar end*/

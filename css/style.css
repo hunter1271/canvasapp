@@ -966,4 +966,19 @@ ul.bxslider {
   background-size: cover;
 }
 
+.underlined:after {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 1px;
+    margin: 10px 0 0 0;
+    border-bottom: solid 2px #c24a6a;
+}
+
+.col-circle .underlined:after {
+    width: 30px;
+    margin: 15px auto 0 auto;
+    border-bottom: solid 2px #373737;
+}
+
 /*# sourceMappingURL=style.css.map */

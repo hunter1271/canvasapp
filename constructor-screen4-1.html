@@ -60,9 +60,9 @@
                     <div class="col-lg-12">
                         <h3 class="header underlined">Конструктор</h3>
                         <div class="btn-group group-preview" data-toggle="buttons">
-                          <button class="btn btn-pink btn-preview">
-                              <span class="ic icon-view-ic"></span> Предпросмотр
-                          </button>
+                          <label class="btn btn-pink btn-preview disabled">
+                              <input type="checkbox" autocomplete="off"><span class="ic icon-view-ic"></span> Предпросмотр
+                          </label>
                         </div>
                     </div>
                 </div>
@@ -72,21 +72,68 @@
             <div class="container container-constructor">
                 <div class="row row-constructor">
                     <div class="col-lg-12 col-constructor">
-                        <div class="screen screen-preview">
-                            <div style="height: 500px; background-color: grey"></div>
+                        <div class="screen screen-select-size">
+                            <div class="select-size-content">
+                                <div class="select-size-dialog">
+                                    <div class="wall-area">
+                                        <img class="preview" src="images/constructor/apple-1000.jpg" width="250" />
+                                    </div>
+                                    <p class="description">Мы специально отобрали элементы интерьера, чтобы Вы понимали размеры своей картины</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="placeholder-toolbox"></div>
         </div>
-        <div class="wrapper-toolbar toolbar-preview">
-            <ul class="preview-tips clearfix">
-                <li class="tip">40 x 30 см</li>
-                <li class="tip">Матовый холст</li>
-                <li class="tip">Модульный подрамник 2см.</li>
-                <li class="tip">Галерейная натяжка</li>
-                <li class="tip">Крепления на стену</li>
+        <div class="wrapper-toolbar">
+            <ul class="toolbar set-size-selector" role="toolbar">
+                <li class="tool-item tool-proportion">
+                    <div class="dropup dropup-dark">
+                        <button id="proportionSelector" class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="ic icon-view02"></span>
+                            <span class="title">Квадратный</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu menu-proportions" role="menu" aria-labelledby="proportionSelector">
+                            <li class="menu-item active landscape">
+                                <a class="item-title">Альбомная рама</a>
+                                <span class="ic icon-picture"></span>
+                                <span class="item-description">Информация если нужна, то можно написать тут</span>
+                            </li>
+                            <li class="menu-item square">
+                                <a class="item-title">Квадратная рама</a>
+                                <span class="ic icon-picture"></span>
+                                <span class="item-description">Информация если нужна, то можно написать тут</span>
+                            </li>
+                            <li class="menu-item portrait">
+                                <a class="item-title">Портретная рама</a>
+                                <span class="ic icon-picture"></span>
+                                <span class="item-description">Информация если нужна, то можно написать тут</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tool-item tool-size">
+                    <div class="dropup dropup-dark">
+                        <button id="sizeSelector" class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="title">24 x 50</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="sizeSelector">
+                            <li><a>30 x 20 см</a></li>
+                            <li class="active"><a>60 x 40 см</a></li>
+                            <li><a>45 x 30 см</a></li>
+                            <li><a>45 x 30 см</a></li>
+                            <li><a>45 x 30 см</a></li>
+                            <li><a>45 x 30 см</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tool-item tool-select-size">
+                    <button class="btn btn-sm btn-pink">Выбрать</button>
+                </li>
             </ul>
         </div>
         <div class="wrapper-tools top-line-pink">
