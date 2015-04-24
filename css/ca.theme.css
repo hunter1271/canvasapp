@@ -95,7 +95,7 @@ button::-moz-focus-inner {
 }
 
 .btn-sm {
-    padding: 11px 20px 9px 20px;
+    padding: 11px 20px 8px 20px;
     font-size: 10px;
     line-height: 1em;
 }
@@ -190,7 +190,7 @@ button::-moz-focus-inner {
 }
 
 .progress {
-    height: 4px;
+    height: 6px;
     background-color: #ffffff;
     border-radius: 2px;
     box-shadow: none;
@@ -230,6 +230,10 @@ button::-moz-focus-inner {
 
 .zoom-controls .zoom-track .zoom-handle:hover {
     box-shadow: 0 0 4px #37383e;
+}
+
+.zoom-controls .zoom-track .zoom-handle:active {
+    background-color: #d7d7d8;
 }
 
 .zoom-controls .zoom-track .good-quality-zone {
