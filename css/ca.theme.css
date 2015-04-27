@@ -46,7 +46,7 @@ html, body {
 
 body {
     color: #61626b;
-    font: 14px Georgia, "Helvetica", "Arial", sans-serif;
+    font: 14px Gotham, "Helvetica", "Arial", sans-serif;
     overflow-y:scroll;
 }
 
@@ -66,6 +66,14 @@ h3 {
     text-transform: uppercase;
     margin: 20px 0 20px 0;
     letter-spacing: 0;
+}
+
+p {
+    font: 14px Georgia, "Helvetica", "Arial", sans-serif;
+}
+
+label {
+    font-size: 13px;
 }
 
 button:active, button:focus {
@@ -107,6 +115,10 @@ button::-moz-focus-inner {
 .btn-pink {
   background: #c24a6a;
   color: #fff;
+}
+
+.btn-block {
+    display: block;
 }
 
 .btn-pink:hover,
@@ -378,5 +390,5 @@ button::-moz-focus-inner {
 }
 
 .container-content .icon-logo {
-    font-size: 51px;
+    font-size: 50px;
 }

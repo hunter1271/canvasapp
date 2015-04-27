@@ -823,8 +823,8 @@
 
 /*Content start*/
 .container-content {
-    width: 650px;
-    margin: 145px auto 0 auto;
+    width: 830px;
+    margin: 137px auto 0 auto;
 }
 
 .container-content .header {
@@ -833,7 +833,7 @@
 
 .container-content p {
     font-size: 16px;
-    margin: 18px 0 28px 0;
+    margin: 18px 90px 28px 90px;
     line-height: 28px;
 }
 
@@ -843,4 +843,43 @@
     padding-right: 45px;
 }
 /*Content end*/
+
+/*From wrapper start*/
+.wrapper-from {
+    display: table;
+    width: 830px;
+    margin: 67px -15px 10px -15px;
+    border-radius: 3px;
+    overflow-x: hidden;
+    color: #ffffff;
+    text-align: left;
+    background-color: #484850;
+}
+.wrapper-from .form,
+.wrapper-from .info {
+    height: 100%;
+    display: table-cell;
+    padding: 19px 47px 10px 35px;
+}
+
+.wrapper-from .form {
+    float: left;
+    width: 500px;
+    background-color: #383840;
+}
+
+.wrapper-from .info {
+    float: right;
+    width: 330px;
+}
+
+.wrapper-from h3{
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.wrapper-from .form-group {
+    margin: 22px 0 6px 0;
+}
+/*From wrapper end*/
 
