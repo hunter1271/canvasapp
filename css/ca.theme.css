@@ -46,7 +46,7 @@ html, body {
 
 body {
     color: #61626b;
-    font: 14px Gotham, "Helvetica", "Arial", sans-serif;
+    font: 14px Georgia, "Helvetica", "Arial", sans-serif;
     overflow-y:scroll;
 }
 
@@ -394,6 +394,10 @@ button::-moz-focus-inner {
 
 .container-content .icon-logo {
     font-size: 50px;
+}
+
+.form-group {
+    font: 14px Gotham, "Helvetica", "Arial", sans-serif;
 }
 
 .form-control {

@@ -846,7 +846,6 @@
 
 /*From wrapper start*/
 .wrapper-from {
-    display: table;
     width: 830px;
     margin: 67px -15px 158px -15px;
     border-radius: 3px;
@@ -857,19 +856,16 @@
 }
 .wrapper-from .form,
 .wrapper-from .info {
-    height: 100%;
-    display: table-cell;
     padding: 19px 47px 51px 35px;
+    vertical-align: top;
 }
 
 .wrapper-from .form {
-    float: left;
     width: 500px;
     background-color: #383840;
 }
 
 .wrapper-from .info {
-    float: right;
     width: 330px;
 }
 
@@ -894,7 +890,8 @@
 /*From wrapper end*/
 
 /*Info block start*/
-.info p {
+.info p,
+.form p {
     font: 13px Gotham, "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     line-height: 16px;
