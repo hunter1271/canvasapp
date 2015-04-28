@@ -68,6 +68,12 @@ h3 {
     letter-spacing: 0;
 }
 
+h6 {
+    font: 14px GothamBold, "Helvetica", "Arial", sans-serif;
+    margin: 10px 0 10px 0;
+    letter-spacing: 0;
+}
+
 p {
     font: 14px Georgia, "Helvetica", "Arial", sans-serif;
 }
@@ -86,14 +92,15 @@ button::-moz-focus-inner {
 
 .btn {
   font: 13px GothamBold, "Helvetica", "Arial", sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
+    line-height: 11px;
   position: relative;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   behavior: url(PIE.htc);
   text-align: center;
-  padding: 10px;
+  padding: 12px 12px;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -115,10 +122,6 @@ button::-moz-focus-inner {
 .btn-pink {
   background: #c24a6a;
   color: #fff;
-}
-
-.btn-block {
-    display: block;
 }
 
 .btn-pink:hover,
@@ -391,4 +394,16 @@ button::-moz-focus-inner {
 
 .container-content .icon-logo {
     font-size: 50px;
+}
+
+.form-control {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
 }
