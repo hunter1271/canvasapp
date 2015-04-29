@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CanvasApp layout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ca.theme.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="wrapper-navigation top-line-pink bottom-line-grey">
+            <div class="container container-navigation">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navbar" role="navigation">
+                          <div class="container-fluid container-navbar">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#"><span class="ic icon-logo"></span> <span class="capp">CanvasApp</span></a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                              <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Главная</a></li>
+                                <li><a href="#">Условия оплаты и доставки</a></li>
+                                <li><a href="#">Контакты</a></li>
+                              </ul>
+                              <ul class="nav navbar-nav navbar-right">
+                                <li><i class="ic icon-fb"></i></li>
+                                <li><i class="ic icon-ins"></i></li>
+                                <li><i class="ic icon-vk"></i></li>
+                              </ul>
+                            </div><!--/.nav-collapse -->
+                          </div><!--/.container-fluid -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-content">
+            <div class="container container-content">
+                <div class="row">
+                    <div class="col-lg-12 center">
+                        <table class="wrapper-from">
+                            <tr>
+                                <td class="form">
+                                    <form>
+                                        <fieldset>
+                                            <h3 class="contacts underlined">Контактная информация</h3>
+                                            <div class="form-group">
+                                                <label for="customerName">Ваше Имя</label>
+                                                <input type="text" class="form-control" id="customerName" value="Farid">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="customerPhone">Телефон</label>
+                                                <input type="text" class="form-control" id="customerPhone">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="customerEmail">Электронная почта</label>
+                                                <input type="email" class="form-control" id="customerEmail">
+                                            </div>
+                                            <h3 class="delivery underlined">Параметры доставки</h3>
+                                            <div class="form-group">
+                                                <label for="deliveryCity">Выберите город</label>
+                                                <select class="form-control" id="deliveryCity">
+                                                    <option value="0">Москва</option>
+                                                    <option value="1">Санкт-Петербург</option>
+                                                    <option value="2">Казань</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="radio">
+                                                    <input type="radio" id="deliveryCourier" name="deliveryVariant"/>
+                                                    <label for="deliveryCourier">Доставка курьерской службой (IM logistic) - 350 руб.</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="deliveryPickup" name="deliveryVariant"/>
+                                                    <label for="deliveryPickup">Самовывоз из пункта выдачи заказов - 95 руб.</label>
+                                                </div>
+                                            </div>
+                                            <fieldset class="delivery-courier">
+                                                <div class="form-group group-address">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-street">
+                                                            <input type="text" class="form-control" id="deliveryCourierStreet" placeholder="Улица">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-house">
+                                                            <input type="text" class="form-control" id="deliveryCourierHouse" placeholder="Дом">
+                                                        </div>
+                                                        <div class="col-lg-4 col-building">
+                                                            <input type="text" class="form-control" id="deliveryCourierBuilding" placeholder="Корпус">
+                                                        </div>
+                                                        <div class="col-lg-4 col-apartment">
+                                                            <input type="text" class="form-control" id="deliveryCourierApartment" placeholder="Квартира">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="deliveryCourierInterval">Время доставки</label>
+                                                    <select class="form-control" id="deliveryCourierInterval">
+                                                        <option value="0">c 9.00 до 12.00</option>
+                                                        <option value="1">с 12.00 до 18.00</option>
+                                                        <option value="2">с 18.00 до 22.00</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control additional-info" placeholder="Дополнительная информация"></textarea>
+                                                </div>
+                                            </fieldset>
+
+                                            <fieldset class="delivery-pickup">
+                                                <p class="title">Адрес:</p>
+                                                <p class="value">ул. Братиславская д. 16, корпус 2. <a href="#">На карте</a></p>
+                                                <p class="title">Время работы:</p>
+                                                <p class="value">Ежедневно с 10.00 до 22.00</p>
+                                            </fieldset>
+
+                                            <button type="button" class="btn btn-pink btn-block btn-submit">Оформить заказ</button>
+                                            <p class="small">Оформляя заказ вы принимаете <a href="#">условия обслуживания</a></p>
+                                        </fieldset>
+                                    </form>
+                                </td>
+                                <td class="info">
+                                    <h3 class="underlined">Заказ</h3>
+                                    <p class="order-main">Фотопечать на натуральном холсте</p>
+
+                                    <p>Размер: 30 х 40 см.</p>
+                                    <p>Холст: Матовый</p>
+                                    <p>Подрамник: Обычный (2 см.)</p>
+                                    <p>Крепления на стену: Да</p>
+
+                                    <p class="subtotal-title">Цена:</p>
+                                    <p class="subtotal-amount">1800 <span class="small">руб.</span></p>
+                                    <p class="subtotal-info"><a href="#">Доп. информация</a></p>
+
+                                    <p class="subtotal-title">Доставка:</p>
+                                    <p class="subtotal-amount">350 <span class="small">руб.</span></p>
+                                    <p class="subtotal-info">Доставка курьерской службой</p>
+                                    <hr class="total-separator"/>
+                                    <p class="subtotal-title">Итого:</p>
+                                    <p class="subtotal-amount">2150 <span class="small">руб.</span></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="go-back">Вернуться <a href="#">в конструктор</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

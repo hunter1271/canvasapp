@@ -82,6 +82,14 @@ label {
     font-size: 13px;
 }
 
+a {
+    color: #cd3c5e;
+}
+
+a:hover {
+    color: #cd3c5e;
+}
+
 button:active, button:focus {
   outline: none !important;
 }
@@ -402,8 +410,6 @@ button::-moz-focus-inner {
 
 .form-control {
     font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
     box-shadow: none;
 }
 

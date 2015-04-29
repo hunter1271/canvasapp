@@ -1,6 +1,10 @@
 .wrapper-main {
     position: relative;
     min-height: 100%;
+    padding-bottom: 50px;
+}
+
+.wrapper-main.with-footer {
     padding-bottom: 450px;
     margin-bottom: -440px;
 }
@@ -824,6 +828,11 @@
 /*Content start*/
 .container-content {
     width: 830px;
+    margin: 0 auto 0 auto;
+}
+
+.pictures-white-bg .container-content {
+    width: 830px;
     margin: 137px auto 0 auto;
 }
 
@@ -847,7 +856,7 @@
 /*From wrapper start*/
 .wrapper-from {
     width: 830px;
-    margin: 67px -15px 158px -15px;
+    margin: 67px -15px 9px -15px;
     border-radius: 3px;
     overflow: hidden;
     color: #ffffff;
@@ -856,7 +865,7 @@
 }
 .wrapper-from .form,
 .wrapper-from .info {
-    padding: 19px 47px 51px 35px;
+    padding: 19px 47px 33px 35px;
     vertical-align: top;
 }
 
@@ -875,7 +884,7 @@
 }
 
 .wrapper-from .form-group {
-    margin: 0 0 28px 0;
+    margin: 0 0 23px 0;
 }
 
 .wrapper-from textarea#messageText {
@@ -883,7 +892,7 @@
 }
 
 .wrapper-from .btn-submit {
-    margin-top: 43px;
+    margin-top: 28px;
     font-size: 11px;
 }
 
@@ -892,11 +901,96 @@
 /*Info block start*/
 .info p,
 .form p {
-    font: 13px Gotham, "Helvetica", "Arial", sans-serif;
-    font-weight: bold;
+    font: 14px GothamBold, "Helvetica", "Arial", sans-serif;
     line-height: 16px;
-    margin: 2px 0;
-    color: #d8d8d9;
+    margin: 9px 0;
+    color: #ffffff;
+}
+
+.form h3.delivery {
+    margin-top: 40px;
+}
+
+.form .radio input[type="radio"] {
+    display: none;
+}
+
+.form .radio input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 2px 23px;
+    font: 14px Georgia, "Helvetica", "Arial", sans-serif;
+}
+
+.form .radio input[type="radio"] + label:before {
+    content: ' ';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border: solid 3px #606166;
+    border-radius: 7px;
+    background-color: #606166;
+}
+
+
+.form .radio input[type="radio"]:checked + label:before {
+    border-color: #ffffff;
+    background-color: #d24c6d;
+}
+
+.form .col-street {
+    margin: 12px 0 10px 0;
+}
+
+.form .col-house,
+.form .col-building,
+.form .col-apartment {
+    margin: 13px 0 10px 0;
+}
+
+.form .col-house {
+    padding-right: 5px;
+}
+
+.form .col-building {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.form .col-apartment {
+    padding-left: 5px;
+}
+
+.form .group-address {
+    margin-bottom: 16px;
+}
+
+.form textarea.additional-info {
+    height: 90px;
+}
+
+.form .title {
+    margin: 20px 0 6px 0;
+}
+
+.form .value {
+    margin: 6px 0 4px 0;
+}
+
+.form .delivery-pickup {
+    margin-top: -9px;
+}
+
+.form .small {
+    font: 12px Georgia, "Helvetica", "Arial", sans-serif;
+}
+
+.container-content .go-back {
+    margin: 0 0 0 -15px;
+    text-align: left;
+    font: 12px Georgia, "Helvetica", "Arial", sans-serif;
 }
 
 .info .phones {
@@ -913,7 +1007,44 @@
 
 .info .email a{
     font: 14px GothamBold, "Helvetica", "Arial", sans-serif;
-    color: #e3577c;
+    color: #fe568a;
 }
+
+.info .order-main {
+    margin: -5px 0 16px 0;
+    line-height: 19px;
+}
+
+.info .subtotal-title {
+    margin: 18px 0 2px 0;
+}
+
+.info .subtotal-amount {
+    margin: 6px 0 2px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.info .subtotal-amount .small {
+    font-size: 12px;
+}
+
+.info .subtotal-info {
+    margin: 2px 0 2px 0;
+    font: 11px Georgia, "Helvetica", "Arial", sans-serif;
+    color: #a4a5aa;
+
+}
+
+.info .subtotal-info a {
+    color: #fe5387;
+}
+
+.info .total-separator {
+    margin: 23px 0 10px 0;
+    border-color: #5a5b60;
+}
+
+
 /*Info block end*/
 
